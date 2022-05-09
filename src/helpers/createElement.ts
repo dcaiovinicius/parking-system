@@ -1,4 +1,4 @@
-function createElement(
+export function createElement(
   tagName: string,
   textContext: string | null,
   attributes: object | null,
@@ -26,5 +26,3 @@ function createElement(
 
   return element;
 }
-
-export default createElement;
