@@ -9,7 +9,54 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <main id="app">
+    <article>
+      <!--Form-->
+      <div>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="plate">Plate</label>
+            <input type="text" name="plate" id="plate" />
+          </div>
+
+          <div>
+            <button type="button">Book</button>
+          </div>
+        </form>
+      </div>
+
+      <!--Table-->
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>PIN</th>
+              <th>NAME</th>
+              <th>PLATE</th>
+              <th>DELETE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span>97687698</span>
+                <button>Copy</button>
+              </td>
+              <td>Caio Vinicius</td>
+              <td>KL 35 J 4199</td>
+              <td>
+                <button>Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </main>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
