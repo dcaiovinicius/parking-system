@@ -8,4 +8,4 @@ export default class Application {
   }
 }
 
-const application = new Application();
+new Application();
