@@ -1,1 +1,56 @@
+@import 'variables';
 @import 'reset';
+@import 'containers';
+
+.marking-top {
+  margin-top: $maring-top;
+}
+
+.form-control {
+  background-color: #E9E9E9;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.text-color-label {
+  color: #464646;
+}
+
+.btn-lg {
+  margin-top: 20px;
+  margin-bottom: $maring-top;
+  padding: 16px;
+  border: 0;
+  outline: 0;
+  background-color: #F8D73A;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 800;
+
+  &:hover {
+    background-color: #eed764;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+tr,
+td {
+  background-color: #E9E9E9;
+  text-align: left;
+  padding: 20px;
+}

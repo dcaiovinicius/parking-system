@@ -15,38 +15,34 @@
 </head>
 
 <body>
-  <main id="parking">
+  <main class="container">
     <article>
       <!--Form-->
-      <div>
+      <div class="flex column align-center justify-center marking-top">
+        <div>
+          <img src="/assets/logo.svg" alet="Parking" />
+        </div>
+
         <form id="form">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" data-input="name" />
+          <div class="flex column form-container">
+            <label for="name" class="text-color-label">Name</label>
+            <input class="form-control" type="text" name="name" id="name" data-input="name" />
           </div>
-          <div>
-            <label for="plate">Plate</label>
-            <input type="text" name="plate" id="plate" data-input="plate" />
+          <div class="flex column form-container">
+            <label for="plate" class="text-color-label">Vehicle registration plate</label>
+            <input class="form-control" type="text" name="plate" id="plate" data-input="plate" />
           </div>
 
           <div>
-            <button type="submit">Book</button>
+            <button type="submit" class="btn-lg">Book</button>
           </div>
         </form>
       </div>
 
       <!--Table-->
-      <div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Access code</th>
-              <th>NAME</th>
-              <th>PLATE</th>
-              <th>DELETE</th>
-            </tr>
-          </thead>
-          <tbody data-target="tbody">
+      <div class="flex column align-center justify-center">
+        <table>
+          <tbody data-target="tbody" class="tbody">
           </tbody>
         </table>
       </div>
