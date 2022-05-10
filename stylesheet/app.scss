@@ -54,3 +54,39 @@ td {
   text-align: left;
   padding: 20px;
 }
+
+.btn-delete {
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  color: #E9E9E9;
+  border-radius: 10px;
+  background-color: #FF7575;
+
+  &:hover {
+    background-color: #dd7373d7;
+  }
+}
+
+.btn-copy {
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  color: #E9E9E9;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #33AD5F;
+
+  &:hover {
+    background-color: #1e6839;
+  }
+}
+
+.uuid {
+  border: 0;
+  outline: 0;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #fff;
+  padding: 10px;
+  display: inline-flex;
+  min-width: 360px;
+}

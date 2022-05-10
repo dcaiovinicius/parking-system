@@ -18,7 +18,6 @@ export default class Context {
       if (name.value != "" && plate.value) {
         this.create([name.value, plate.value]);
         name.value = "";
-        plate.value = "";
       }
     });
   }
@@ -44,9 +43,11 @@ export default class Context {
   }
 
   key(key: string) {
-    const td = createElement('td', key, null, null);
-    const copy = createElement('button', 'copy', null, { data: "data-copy", value: key });
+    const td = createElement('td', null, null, null);
+    const copy = createElement('button', 'copy', { class: 'btn-copy' }, { data: "data-copy", value: key });
+    const span = createElement('input', null, { class: 'uuid', value: key, readonly: null }, null);
 
+    td.appendChild(span);
     td.appendChild(copy);
 
     return td;
@@ -54,7 +55,7 @@ export default class Context {
 
   delete(key: string) {
     const td = createElement('td', null, null, null);
-    const buttonDelete = createElement('button', 'delete', null, { data: "data-action", value: key });
+    const buttonDelete = createElement('button', 'delete', { class: 'btn-delete' }, { data: "data-action", value: key });
 
     td.appendChild(buttonDelete);
 
