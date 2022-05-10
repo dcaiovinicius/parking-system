@@ -40,15 +40,16 @@ export default class Context {
     tbody.appendChild(tr);
 
     this.addEventListenerDelete(key);
+    this.addEventListenerCopy(key);
   }
 
   key(key: string) {
-    const pin = createElement('td', key, null, null);
-    const copy = createElement('button', 'copy', null, null);
+    const td = createElement('td', key, null, null);
+    const copy = createElement('button', 'copy', null, { data: "data-copy", value: key });
 
-    pin.appendChild(copy);
+    td.appendChild(copy);
 
-    return pin;
+    return td;
   }
 
   delete(key: string) {
@@ -66,6 +67,14 @@ export default class Context {
 
     buttonDelete?.addEventListener('click', () => {
       selectors('data-taget-key', key)?.remove();
+    })
+  }
+
+  addEventListenerCopy(key: string) {
+    const copy = selectors('data-copy', key);
+
+    copy?.addEventListener('click', () => {
+      navigator.clipboard.writeText(key);
     })
   }
 }
