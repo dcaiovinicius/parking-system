@@ -30,7 +30,7 @@ $ yarn dev
 
 ```
 <h1 align="center">
-	<img alt="Mockup" height="800px" src="assets/screenshot.jpg" width="200px" />
+	<img alt="Mockup" width="800px"  src="assets/screenshot.jpg" />
 </h1>
 
 
