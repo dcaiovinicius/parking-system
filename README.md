@@ -29,5 +29,9 @@ $ yarn
 $ yarn dev
 
 ```
+<h1 align="center">
+	<img alt="Mockup" width="800px" src="assets/screenshot.jpg width="200px" />
+</h1>
+
 
 <a href="https://astonishing-banoffee-5682aa.netlify.app/">Demo on netlify</a>
